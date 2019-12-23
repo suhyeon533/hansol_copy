@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $(".panelBg").hide();
+    $(".panel").click(function(){
+        $(".panelBg").fadeIn();
+        $(".panelM").css("width","70%");
+    })
+    $(".closeBtn,.panelBg").click(function(){
+        $(".panelM").css("width","0");
+        $(".panelBg").fadeOut();
+    })
+})
